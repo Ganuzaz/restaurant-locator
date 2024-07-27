@@ -12,7 +12,7 @@ export interface IRestaurant{
     foods : IFood[]
 }
 
-@Table({modelName : "restaurant", timestamps : false})
+@Table({modelName : "restaurants", timestamps : false})
 export class Restaurant extends Model<IRestaurant> implements IRestaurant{
     @Column({
         primaryKey : true,
